@@ -52,7 +52,7 @@ if submit:
                 row_str = row_str[:-1]
             print(row_str)
             st.header(row_str)
-            with st.expander("See query"):
-                st.write(sql_query)  # Display the SQL query
+        with st.expander("See query"):
+            st.write(sql_query)  # Display the SQL query
     else:
         st.header("The query didn't return any result")
